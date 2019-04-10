@@ -1,0 +1,226 @@
+/*Start mnavbar*/
+.navbar {
+    height: 0;
+    position: relative;
+    z-index: 2;
+    background: none;
+    color: #fff;
+    margin-bottom: 60px;
+}
+.navbar .logo {
+    width: 25%;
+    float: left;
+    padding: 20px;
+    cursor: pointer;
+}
+.navbar .contact-info {
+    width: 55%;
+    float: right;
+    padding: 26px;
+}
+.navbar .contact-info span {
+    margin: 0 48px;
+}
+.navbar .contact-info span:before {
+    content: "\f095";
+    font-family: FontAwesome;
+    font-size: 13px;
+    position: absolute;
+    margin-left: -15px;
+    top: 30px;
+}
+@media (max-width: 767px) {
+    .navbar .contact-info span{
+        cursor: pointer;
+        background-color: #2dcc70;
+        display: block;
+        width: 150px;
+        border-radius: 6px;
+        text-align: center;
+        height: 22px;
+    }
+    .navbar .contact-info span:before {
+    top: 28px;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar .contact-info span{
+        cursor: pointer;
+        background-color: #2dcc70;
+        display: block;
+        width: 150px;
+        border-radius: 6px;
+        text-align: center;
+        height: 22px;
+    }
+}
+.navbar .contact-info button {
+    margin: 0 48px;
+}
+.navbar .contact-info button:first-of-type {
+    background: none;
+    border: none;
+}
+.navbar .contact-info button:last-of-type {
+    background-color: #2dcc70;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 28px;
+    border-radius: 8px;
+    position: relative
+}
+/*End navbar*/
+/*Start header*/
+.header {
+    background: url(../images/3.jpg) no-repeat top center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    min-height: 600px;
+}
+.header .row .left {
+    margin-top: 100px;
+    color: #fff
+}
+.header .row .right {
+    background-color: rgba(255, 255, 255, .2);
+    padding: 20px;
+    border-radius: 6px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .header .row .right {
+        margin-bottom: 20px
+    }
+}
+.header .row .right h4 {
+    text-align: center;
+    color: #fff;
+    padding: 0px;
+    margin-bottom: 16px;
+}
+.header .row .right form input[type="text"] {
+    margin-bottom: 10px;
+}
+.header .row .right form input[type="submit"] {
+    margin:10px auto;
+    margin-left: 35%;
+    text-align: center;
+    width: 180px;
+    background: #2dcc70;
+    border: none;
+    height: 40px;
+    color: #fff;
+    border-radius: 6px;
+}
+/*Start header*/
+
+/*Start features*/
+.features {
+    padding: 20px;
+    background: #2dcc70;
+    color: #fff;
+}
+.features .feat {
+    padding: 70px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all .7s ease-in-out;
+    backface-visibility: hidden;
+    cursor: pointer;
+}
+.features .feat:hover {
+    transform: rotateY(180deg);
+}
+@media (max-width: 767px) {
+    .features .feat {
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .features .feat {
+        margin-bottom: 25px;
+    }
+}
+.features .feat i {font-size: 95px;display: block}
+.features .feat p {
+    width: 65%;
+    display: inline-block;
+    margin: 12px 0 0 0;
+    text-transform: capitalize
+}
+.features .feat > div {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    font-family: arial , tahoma;
+}
+.features .feat .front {
+    z-index: 2;
+    backface-visibility: hidden;
+}
+.features .feat .back {
+    z-index: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    cursor: pointer;
+}
+/*End features*/
+
+/*Start footer*/
+.footer {padding: 20px 0}
+
+.footer .logo {padding: 10px 0;width: 95%}
+.footer form { padding: 22px;margin-left: 80px;}
+.footer form input[type="text"]{
+    width: 70%;
+    border-radius: 6px;
+    background: #ddd;
+    color: #222;
+    border: 1px solid #ddd;
+    padding: 4px;
+}
+@media (max-width:767px){
+    .footer form input[type="text"] {
+        display: block;
+        text-align: center;
+        width: 80%;
+    }
+}
+.footer form input[type="submit"] {
+    padding: 4px;
+    background: #2dcc70;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    width: 29%;
+}
+@media (max-width: 767px) {
+    .footer form input[type="submit"] {
+        display: block;
+        margin: 20px 0px 135px 0px;
+        margin-left: 135px;
+        margin-bottom: 0px;
+    }
+}
+/*End footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
